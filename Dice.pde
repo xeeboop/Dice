@@ -10,7 +10,7 @@ void setup()
       noLoop();
       ellipseMode(CENTER);
       rectMode(CENTER);
-      her = loadImage("54daf5365cb760fed8167c9d51654ea5.jpg");
+      her = loadImage("download.jpg");
       her.resize(450,450);
       frameRate(10);
      
