@@ -12,12 +12,10 @@ void setup()
       rectMode(CENTER);
       her = loadImage("download.jpg");
       her.resize(450,450);
-      frameRate(10);
-     
+      frameRate(10); 
   }
   void draw()
-  {
-    
+  {   
     background(0);
     for (int j = 1; j < 5; j++){  
       for (int i = 1; i < 5; i++){
@@ -46,8 +44,7 @@ void setup()
       }
       void roll()
       {
-        diceroll=(int)(Math.random()*6+1);
-         
+        diceroll=(int)(Math.random()*6+1);   
       }
       void show()
       {
