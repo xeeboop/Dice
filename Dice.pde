@@ -12,11 +12,12 @@ void setup()
       rectMode(CENTER);
       her = loadImage("download.jpg");
       her.resize(450,450);
-      frameRate(10); 
   }
   void draw()
-  {   
+  {  
     background(0);
+    tint(255,0,0);
+    image(her, 0,0);
     for (int j = 1; j < 5; j++){  
       for (int i = 1; i < 5; i++){
          bosscat=new Die(90*i+1, 90*j+1);
@@ -30,8 +31,6 @@ void setup()
   void mousePressed()
   {
       redraw();
-      tint(255,0,0);
-      image(her, 0,0);
   }
   class Die 
   {
@@ -39,14 +38,15 @@ void setup()
       Die(int x, int y) 
       {
           myX = x;
-          myY = y;        
+          myY = y;       
       }
       void roll()
       {
-        diceroll=(int)(Math.random()*6+1);   
+        diceroll=(int)(Math.random()*6+1);      
       }
       void show()
       {
+          
           fill(255,0,0);
           rect(myX,myY,70,70,20);
            if (diceroll==1){
@@ -76,8 +76,7 @@ void setup()
             counter = counter + 4;
           }
           else if (diceroll==5){
-            fill(250);
-            
+            fill(250);          
             ellipse(myX, myY, 15, 15);
             ellipse(myX-20, myY+20, 15, 15);
             ellipse(myX+20, myY-20, 15, 15);
