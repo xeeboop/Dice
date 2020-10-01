@@ -39,8 +39,7 @@ void setup()
       Die(int x, int y) 
       {
           myX = x;
-          myY = y;
-          
+          myY = y;        
       }
       void roll()
       {
